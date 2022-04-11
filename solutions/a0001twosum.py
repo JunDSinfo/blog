@@ -34,4 +34,4 @@ class Solution:
                 dic[num] = index
         return dic
 
-                dic[num] = index
+         
