@@ -22,15 +22,16 @@
 # return [0, 1].
 ################################################
 
-from typing import List
-
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums, target):
         dic = {}
         for index, num in enumerate(nums):
             pair = target - num
             if pair in dic:
                 return [dic[pair], index]
             else:
+                dic[num] = index
+        return dic
+
                 dic[num] = index
